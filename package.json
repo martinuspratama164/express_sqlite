@@ -1,0 +1,19 @@
+{
+  "name": "express_sqlite",
+  "version": "1.0.0",
+  "description": "belajar expess_sqlite",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js --watch",
+    "migration:user": "node ./model/schema/userSchema.js"
+  },
+  "keywords": [],
+  "author": "martinuspratama164",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.4",
+    "sqlite3": "^5.0.2"
+  }
+}
