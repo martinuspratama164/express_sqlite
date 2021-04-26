@@ -5,7 +5,7 @@ Accept: application/json
 
 {
     "fullname": "Martinus Pratama Putra",
-    "username": "martinuspratama164",
+    "username": "martinuspratama",
     "email": "martinuspratama164@gmail.com",
     "password": "qweasd123asd#1234",
     "telephone": "08997868547",

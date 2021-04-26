@@ -12,14 +12,14 @@ exports.createUser = async(data)=>{
 };
 
 // membuat function bernama readUser
-exports. readUser = async()=>{
+exports.readUser = async() => {
     return await db("users").select("*")
     .then((hasil)=>{
         return hasil;
     })
-    .catch(kesalahan)=>{
+    .catch((kesalahan) => {
         return kesalahan;
-    };
+    });
 };
 
 // membuat function bernama deleteUser
@@ -35,7 +35,7 @@ exports.deleteUser = async(data)=>{
 
 // membuat function bernama editUser
 exports.editUser = async(id, data)=>{
-    return await db("users").where({id: id}).update(data)
+    return await db("users").where({id_user: id}).update(data)
     .then((hasil)=>{
         return hasil;
     })

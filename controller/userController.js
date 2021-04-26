@@ -1,6 +1,6 @@
 const express = require("express");
 const user = express.Router();
-const { createUser, readUser, deleteUser, edituser } = require("../model/userModel");
+const { createUser, readUser, deleteUser, editUser } = require("../model/userModel");
 
 // POST data user
 user.post("/", (req, res) => {
@@ -60,7 +60,7 @@ user.delete("/", (req, res) => {
         } else {
             // jika hasil 0 maka data tidak ditemukan
             res.status(404).json({
-                pesan: "Data yang akan dihapus tidak ditemukan!"
+                pesan: "Data yang akan dihapus tidak ditemukan!",
                 hasil: result
             });
         }
@@ -78,7 +78,7 @@ user.patch("/edit/:id", (req, res) => {
     let id_edit = req.params.id; // capture params id
     let data_edit = req.body; // capture body data
 
-    edituser(id_edit, data_edit)
+    editUser(id_edit, data_edit)
     .then((result)=>{
         if (result > 0) {
             res.status(200).json({
