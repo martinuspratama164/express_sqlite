@@ -1,0 +1,37 @@
+###
+POST http://localhost:8000/api/user
+Content-Type: application/json
+Accept: application/json
+
+{
+    "fullname": "Martinus Pratama Putra",
+    "username": "martinuspratama164",
+    "email": "martinuspratama164@gmail.com",
+    "password": "qweasd123asd#1234",
+    "telephone": "08997868547",
+    "address": "Semarang",
+    "batch": 8
+}
+
+###
+GET http://localhost:8000/api/user
+Content-Type: application/json
+Accept: application/json
+
+###
+DELETE http://localhost:8000/api/user
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id_user": 1
+}
+
+###
+PATCH http://localhost:8000/api/user/edit/2
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "test@gmail.com"
+}
